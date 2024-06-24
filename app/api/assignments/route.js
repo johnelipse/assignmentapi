@@ -21,7 +21,9 @@ const newAssignment = {
     }
 }
 
-export async function GET(req){
+export async function GET(request){
+    const { method } = request;
+    console.log(method)
 try {
  await connectMongodb()
  const assignments = await Assignment.find()
