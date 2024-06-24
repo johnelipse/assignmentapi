@@ -78,10 +78,10 @@ export default function page() {
         <div className="mt-4 text-white border-[1px] px-2 py-3">
         
      [_id: 6679761401262827c937209b,<br/>
-      title": "Dom Manipulation,<br/>
+      title: Dom Manipulation,<br/>
       description: This is the descripton for Assignment 1,<br/>
       image: https://coding-school-typescript.vercel.app/_next/image?url=https%3A%2F%2Fpublic-files.gumroad.com%2Fzb8tbbmhjq2rwe7n326kkdxw2hwx&w=1920&q=75,<br/>
-      link: "https://desishub-docs.vercel.app/programming-tutorials/nextj,<br/>
+      link: https://desishub-docs.vercel.app/programming-tutorials/nextj,<br/>
       __v: 0]<br/>
        </div>
       </div>
