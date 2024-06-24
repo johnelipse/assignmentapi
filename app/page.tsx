@@ -32,7 +32,7 @@ export default function page() {
     
       [_id: 6679774501262827c937209e,<br/>
       title: AirMax Product Detail Page,<br/>
-      description: In this challenge, you'll build a beautiful product page.,<br/>
+      description: In this challenge, youll build a beautiful product page.,<br/>
       image: https://www.desishub.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FAirMaxBlackSnikers.dc17e7a1.jpg&w=828&q=75,<br/>
       link: https://www.desishub.com/desishub-coding-school/projects-and-challenges/landing-page-design,<br/>
       __v: 0]
