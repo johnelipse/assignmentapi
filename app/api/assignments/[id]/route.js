@@ -1,9 +1,8 @@
 import connectMongodb from "@/app/libs/mongodb";
 import Assignment from "@/models/assignment";
-import { Assigntype } from "@/type/assignment";
 import { NextResponse } from "next/server";
 
-export async function GET(request:any,{params:{id}}:any){
+export async function GET(request,{params:{id}}){
 try {
 await connectMongodb()
 const assignment = await Assignment.findOne({ _id: id });    return NextResponse.json({message:"success",data:assignment},{status:200})
@@ -13,7 +12,7 @@ const assignment = await Assignment.findOne({ _id: id });    return NextResponse
 }
 }
 
-export async function PUT(request:any,{params:{id}}:any){
+export async function PUT(request,{params:{id}}){
 try {
     const {newTitle:title,newDescription:description,newLink:link,newImage:image}=await request.json();
     const newAssignment = {
@@ -31,7 +30,7 @@ return NextResponse.json({message:"success",data:createdAssignment},{status:200}
 }
 }
 
-export async function DELETE(request:any,{params:{id}}:any){
+export async function DELETE(request,{params:{id}}){
    try {
     await connectMongodb()
     await Assignment.findByIdAndDelete(id)

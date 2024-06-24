@@ -2,7 +2,7 @@ import connectMongodb from "@/app/libs/mongodb";
 import Assignment from "@/models/assignment";
 import { NextResponse } from "next/server";
 
-export async function POST(request:any){
+export async function POST(request){
     try {
      const {title,description,link,image}=await request.json();
 const newAssignment = {
@@ -21,7 +21,7 @@ const newAssignment = {
     }
 }
 
-export async function GET(request:any){
+export async function GET(request){
 try {
  await connectMongodb()
  const assignments = await Assignment.find()
